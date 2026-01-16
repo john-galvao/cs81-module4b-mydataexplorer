@@ -11,3 +11,51 @@ const weekData = [
   { day: "Saturday", sleepHours: 7, screenTime: 1, mood: "Relaxed", caffeineIntake: 0, focusLevel: 5 },
   { day: "Sunday", sleepHours: 8, screenTime: 2, mood: "Rested", caffeineIntake: 0, focusLevel: 5 }
 ];
+
+// Four functions that explore this data
+
+function findMostRelaxedDay(data) {
+  for (let entry of data) {
+    if (entry.mood === "Relaxed") {
+      return entry.day;
+    }
+  }
+  let best = data[0];
+  for (let entry of data) {
+    if (entry.focusLevel > best.focusLevel) {
+      best = entry;
+    }
+  }
+  return best.day;
+}
+
+
+function daysWithoutCaffeine(data) {
+  let count = 0;
+  for (let entry of data) {
+    if (entry.caffeineIntake === 0) {
+      count++;
+    }
+  }
+  return count;
+}
+
+
+function countCaffeineDays(data) {
+  let count = 0;
+  for (let entry of data) {
+    if (entry.caffeineIntake > 0) {
+      count++;
+    }
+  }
+  return count;
+}
+
+
+function averageSleep(data) {
+  let total = 0;
+  for (let entry of data) {
+    total += entry.sleepHours;
+  }
+  return total / data.length;
+}
