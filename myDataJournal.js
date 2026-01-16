@@ -1,5 +1,5 @@
 // Prediction: Monday, Wednesday, and Sunday all tie for most screen time.
-// Prediction: The weekend has the best focus levels.
+// Prediction: The weekend does not have the best focus levels.
 // Prediction: More caffeine does not really help, but makes the user more focused sometimes.
 
 const weekData = [
