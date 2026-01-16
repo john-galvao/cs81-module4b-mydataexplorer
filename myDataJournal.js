@@ -1,3 +1,7 @@
+// Prediction: Monday, Wednesday, and Sunday all tie for most screen time.
+// Prediction: The weekend has the best focus levels.
+// Prediction: More caffeine does not really help, but makes the user more focused sometimes.
+
 const weekData = [
   { day: "Monday", sleepHours: 6, screenTime: 2, mood: "Hungry", caffeineIntake: 0, focusLevel: 5 },
   { day: "Tuesday", sleepHours: 5, screenTime: 1, mood: "Tired", caffeineIntake: 0, focusLevel: 5 },
@@ -7,7 +11,3 @@ const weekData = [
   { day: "Saturday", sleepHours: 7, screenTime: 1, mood: "Relaxed", caffeineIntake: 0, focusLevel: 5 },
   { day: "Sunday", sleepHours: 8, screenTime: 2, mood: "Rested", caffeineIntake: 0, focusLevel: 5 }
 ];
-
-// Prediction: Monday, Wednesday, and Sunday all tie for most screen time.
-// Prediction: The weekend has the best focus levels.
-// Prediction: More caffeine does not really help, but makes the user more focused sometimes.
